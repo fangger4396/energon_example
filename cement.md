@@ -23,7 +23,7 @@ Model 2 is a [LSTM][LSTM] model which using the time-series data from both elect
 + **Building Electricity**
 
 ## Example 1: Using Genome Data with Energon for Model 1
-You may feer intractable at the first glance. Here, we provide a tool [**Energon**][energon] may assist you. The following steps can guide you go through the entire process.
+You may feel intractable at the first glance. Here, we provide a tool [**Energon**][energon] may assist you. The following steps can guide you go through the entire process.
 
 ### 1. Install the Energon tool and datasets
 Firstly, lick [here][download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
