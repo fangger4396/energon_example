@@ -62,9 +62,10 @@ By using these features as input of model 1, the accuracy of model 1 for **Genom
 
 ## Example 2: Using Genome Data with Energon for Model 2
 
+### Step 1. Install the Energon tool and datasets
 As you have downloaded the Energon tools, you can start from step 2 here.
 
-### Step 2. Writing EnergonQL to extract the data required for ELF
+### Step 2. Writing EnergonQL to extract the data required for LF
 You can write **EnergonQL** queries to extrac the followling list of features of **Genome** data for Model 2.
 
 `SELECT Chilled_Water + Hot_Water + Solar + Electricity + Weather`\
