@@ -77,7 +77,10 @@ After extracting the required data, you can process it and use it to train model
 You can run the **model_training.py** to reproduce it.
 By using these features as input of model 1, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
 
-`SELECT (Chiller  + AHU) * Power + Weather * Temperature`\
+
+## Example 3:Using EMSD Data with Energon for Model 1
+
+`SELECT Chiller + Solar`
 `FROM Building A`\
 `WHERE A.id = 'Genome'`
 
