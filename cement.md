@@ -22,25 +22,16 @@ Model 2 is a [LSTM][LSTM] model which using the time-series data from both elect
 + **Outdoor Temperature**
 + **Building Electricity**
 
-## Example: Using Genome Data with Energon
-By writing EnergonQL, [**Energon**][energon] can assist to access the **Genome** data. For example:
+## Example 1: Using Genome Data with Energon for Model 1
+You may feer intractable at the first glance. Here, we provide a tool [**Energon**][energon] may assist you. The following steps can guide you go through the entire process.
 
-`SELECT Chilled_Water + Hot_Water + Solar`\
-`FROM Building A`\
-`WHERE A.id = 'Genome'`
-
-This query extracts the following list of features in **Genome**
-
-
-By using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
-
-
-You can find the implement codes in the google driver [**here**][download2] and try it by yourself.
-The dir structure is as follows. You can have quick try by running the **energon_example.py** in your terminal.
+### 1. Install the Energon tool and datasets
+Firstly, lick [here][download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
 ```
 Energon
 │   README.md
 │   energon_example.py  
+│   model_training.py
 │ 
 └───energon
 │ 
@@ -50,31 +41,40 @@ Energon
 │ 
 └───ontology
 ```
-## Cogitation 1
-How can we write **EnergonQL** queries to extract the followling list of features of **Genome** data for Model 2?
+The example codes are prepared in the **energon_example.py** file.
 
-+ **Chilled Water Flow**
-+ **Hot Water Flow**
-+ **Solar Illuminance**
-+ **Outdoor Temperature**
-+ **Building Electricity**
 
-**Solution:**
+### 2. Writing EnergonQL to extract the data required for ELF
+By writing EnergonQL, [**Energon**][energon] can assist to access the **Genome** data. For example:
 
-`SELECT Power + (Chilled_Water + Hot_Water) * Flow_Rate + Solar * Illuminance + Weather * Temperature`\
+`SELECT Chilled_Water + Hot_Water + Solar`\
 `FROM Building A`\
 `WHERE A.id = 'Genome'`
 
-The evaluation result show that these features for Model 2 increasing the accuracy to **85%**.
+This query extracts the above list of features in **Genome**
 
-You can find the implement codes [**here**][download2] and try it by yourself.
-## Cogitation 2
-How can we write **EnergonQL** queries to extrac the followling list of features of **EMSD** data for Model 1?
-+ **AHU Electricity**
-+ **Chiller Electricity**
-+ **Outdoor Temperature**
+As these codes prepared in the **energon_example.py** file. Run this file in your ternimal and you will get data as following screenshot shows:
 
-**Solution:**
+### 3. Train and evaluate the model
+After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
+You can run the **model_training.py** to reproduce it.
+By using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
+
+## Example 2: Using Genome Data with Energon for Model 2
+
+As you have downloaded the Energon tools, you can start from step 2 here.
+
+### 2. Writing EnergonQL to extract the data required for ELF
+You can write **EnergonQL** queries to extrac the followling list of features of **Genome** data for Model 2.
+
+`SELECT Chilled_Water + Hot_Water + Solar + Electricity + Weather`\
+`FROM Building A`\
+`WHERE A.id = 'Genome'`
+
+### 3.  Train and evaluate the model
+After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
+You can run the **model_training.py** to reproduce it.
+By using these features as input of model 1, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
 
 `SELECT (Chiller  + AHU) * Power + Weather * Temperature`\
 `FROM Building A`\
