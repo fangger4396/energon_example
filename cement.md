@@ -54,7 +54,7 @@ By writing EnergonQL, [**Energon**][energon] can assist to access the **Genome**
 This query extracts the above list of features in **Genome**
 
 As these codes prepared in the **energon_example.py** file. Run this file in your ternimal and you will get data as following screenshot shows:
-
+![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot.png)
 ### 3. Train and evaluate the model
 After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
 You can run the **model_training.py** to reproduce it.
