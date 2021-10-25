@@ -35,7 +35,7 @@ Energon
 │ 
 └───energon
 │ 
-└───data
+└───Genome
 │ 
 └───Brick
 │ 
