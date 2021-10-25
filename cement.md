@@ -27,7 +27,7 @@ By using these features as input of model 1, the accuracy of model 1 for **Genom
 
 
 You can find the implement codes in the google driver [**here**][download2] and try it by yourself.
-The dir structure is as follows. You can have quick try by running the energon_example in your terminal.
+The dir structure is as follows. You can have quick try by running the **energon_example.py** in your terminal.
 ```
 Energon
 │   README.md
