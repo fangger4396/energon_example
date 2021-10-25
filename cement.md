@@ -25,7 +25,7 @@ Model 2 is a [Random Forest][RF] model which using the historical data from vari
 + **Solar illuminance**
 
 ## Example 1: Using Genome Data with Energon for Model 1
-You may feel intractable at the first glance. Here, we provide a tool [**Energon**][energon] may assist you. The following steps can guide you go through the entire process.
+You may feel intractable at the first glance. Here, we provide a tool [**Energon**][energon] may assist you. The following steps can guide you to go through the entire process.
 
 ### Step 1. Install the Energon tool and datasets
 Firstly, click [here][download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
