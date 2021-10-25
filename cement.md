@@ -1,10 +1,10 @@
 # Building Application Introduction
 Building Applications are widely used in building energy tracing, fault detection and equipment control, which are always developed in data-driven manner today. Here, we firstly introduce the application named **Electricity Load Forecasting (ELF)**, and then show how two different building datasets can be used for this application.
-## Electricity Load Forecasting
-The Electricity Load Forecasting can be used to predict the next timestamp electricity load of a group of building systems by training a ML model with histrical electricity data of the related systems. As there are limited datasets are public for Cooling Load Forecasting, and both of these two task are predicting load for demandside equipments. Thus we use the Electricity Load Forecasting for showing cases here,
+## Load Forecasting
+The Load Forecasting can be used to predict the next timestamp load of a group of building systems by training a ML model with histrical electricity data of the related systems. As there are limited datasets are public for Cooling Load Forecasting, and both of these two task are predicting load for demandside equipments. Thus we use the Load Forecasting for showing cases here,
 In general, a ML model construction process can be followed to get this model, which consists of data access, data processing, model training, model evaluation orderly.
 ## Public Building Datasets
-Besides the EMSD data, we also provide an open-source dataset from project [**Genome**][genome]. Both of them can be used for training ELF models and downloaded [**here**][download].
+Besides the EMSD data, we also provide an open-source dataset from project [**Genome**][genome]. Both of them can be used for training LF models and downloaded [**here**][download].
 ## Model Introduction
 ### Model 1
 Model 1 is a [Random Forest][RF] model which using the historical data from various systems of the building (e.g., chilled water system and hot water system) and solar illuminance data to train an ML model. Specifically, for the **Genome** datasets, the following sensing data are required:
@@ -25,8 +25,8 @@ Model 2 is a [LSTM][LSTM] model which using the time-series data from both elect
 ## Example 1: Using Genome Data with Energon for Model 1
 You may feel intractable at the first glance. Here, we provide a tool [**Energon**][energon] may assist you. The following steps can guide you go through the entire process.
 
-### 1. Install the Energon tool and datasets
-Firstly, lick [here][download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
+### Step 1. Install the Energon tool and datasets
+Firstly, click [here][download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
 ```
 Energon
 │   README.md
@@ -44,7 +44,7 @@ Energon
 The example codes are prepared in the **energon_example.py** file.
 
 
-### 2. Writing EnergonQL to extract the data required for ELF
+### Step 2. Writing EnergonQL to extract the data required for LF
 By writing EnergonQL, [**Energon**][energon] can assist to access the **Genome** data. For example:
 
 `SELECT Chilled_Water + Hot_Water + Solar`\
@@ -55,7 +55,7 @@ This query extracts the above list of features in **Genome**
 
 As these codes prepared in the **energon_example.py** file. Run this file in your ternimal and you will get data as following screenshot shows:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot.png)
-### 3. Train and evaluate the model
+### Step 3. Train and evaluate the model
 After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
 You can run the **model_training.py** to reproduce it.
 By using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
@@ -64,14 +64,14 @@ By using these features as input of model 1, the accuracy of model 1 for **Genom
 
 As you have downloaded the Energon tools, you can start from step 2 here.
 
-### 2. Writing EnergonQL to extract the data required for ELF
+### Step 2. Writing EnergonQL to extract the data required for ELF
 You can write **EnergonQL** queries to extrac the followling list of features of **Genome** data for Model 2.
 
 `SELECT Chilled_Water + Hot_Water + Solar + Electricity + Weather`\
 `FROM Building A`\
 `WHERE A.id = 'Genome'`
 
-### 3.  Train and evaluate the model
+### Step 3.  Train and evaluate the model
 After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
 You can run the **model_training.py** to reproduce it.
 By using these features as input of model 1, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
