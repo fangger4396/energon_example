@@ -4,7 +4,7 @@ Building Applications are widely used in building energy tracing, fault detectio
 The Load Forecasting can be used to predict the next timestamp load of a group of building systems by training a ML model with histrical electricity data of the related systems. As there are limited datasets are public for Cooling Load Forecasting, and both of these two task are predicting load for demandside equipments. Thus we use the Load Forecasting for showing cases here,
 In general, a ML model construction process can be followed to get this model, which consists of data access, data processing, model training, model evaluation orderly.
 ## Public Building Datasets
-Besides the EMSD data, we also provide an open-source dataset from project [**Genome**][genome]. Both of them can be used for training LF models and downloaded [**here**][download].
+Besides the EMSD data, we also provide an open-source dataset from project [**Genome**][genome].
 ## Model Introduction
 ### Model 1
 Model 1 is a [Random Forest][RF] model which using the historical data from various systems of the building (e.g., chilled water system and hot water system) and solar illuminance data to train an ML model. Specifically, for the **Genome** datasets, the following sensing data are required:
