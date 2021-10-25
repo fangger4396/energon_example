@@ -26,7 +26,7 @@ This query extracts the following list of features in **Genome**:
 By using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
 
 
-You can find the implement codes [**here**][download2] and try it by yourself.
+You can find the implement codes in the google driver [**here**][download2] and try it by yourself.
 The dir structure is as follows. You can have quick try by running the energon_example in your terminal.
 ```
 Energon
