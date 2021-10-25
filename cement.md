@@ -5,7 +5,7 @@ We provide a few examples on the general pipeline to develop an AI model for a l
 3.   Testing the model accuracy
  
 ## Public Building Datasets
-The open-source dataset from project **Genome** are publicated and described [here][genome].
+The open-source dataset from project **Genome** is publicated and described [here][genome].
 ## Model Introduction
 
 ### Model 1
