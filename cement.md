@@ -1,5 +1,5 @@
 # Building Application Introduction
-Building Applications are widely used in building energy tracing, fault detection and equipment control, which are always developed in data-driven manner today. Here, we firstly introduce the application named **Energy Consumption Predition (ECP)**, and then show how two different building datasets can be used for this application.
+Building Applications are widely used in building energy tracing, fault detection and equipment control, which are always developed in data-driven manner today. Here, we firstly introduce the application named **Electricity Load Forecasting (ELF)**, and then show how two different building datasets can be used for this application.
 ## Electricity Load Forecasting
 The Electricity Load Forecasting can be used to predict the next timestamp electricity load of a group of building systems by training a ML model with histrical electricity data of the related systems. As there are limited datasets are public for Cooling Load Forecasting, and both of these two task are predicting load for demandside equipments. Thus we use the Electricity Load Forecasting for showing cases here,
 In general, a ML model construction process can be followed to get this model, which consists of data access, data processing, model training, model evaluation orderly.
@@ -7,21 +7,30 @@ In general, a ML model construction process can be followed to get this model, w
 Besides the EMSD data, we also provide an open-source dataset from project [**Genome**][genome]. Both of them can be used for training ELF models and downloaded [**here**][download].
 ## Model Introduction
 ### Model 1
-Model 1 is a [Random Forest][RF] model which using the historical data from various systems of the building (e.g., chilled water system and hot water system) and solar illuminance data to train an ML model.
-### Model 2
-Model 2 is a [LSTM][LSTM] model which using the time-series data from both electrical and non-electrical systems and the weather data to train a neural network.
-## Example: Using Genome Data with Energon
-By writing EnergonQL, [**Energon**][energon] can assist to access the **Genome** data. For example:
-
-`SELECT (Chilled_Water + Hot_Water) * Flow_Rate + Solar * Illuminance`\
-`FROM Building A`\
-`WHERE A.id = 'Genome'`
-
-This query extracts the following list of features in **Genome**:
+Model 1 is a [Random Forest][RF] model which using the historical data from various systems of the building (e.g., chilled water system and hot water system) and solar illuminance data to train an ML model. Specifically, for the **Genome** datasets, the following sensing data are required:
 
 + **Chilled Water Flow**
 + **Hot Water Flow**
 + **Solar illuminance**
+
+### Model 2
+Model 2 is a [LSTM][LSTM] model which using the time-series data from both electrical and non-electrical systems and the weather data to train a neural network. This model require further data and the following data can serve it:
+
++ **Chilled Water Flow**
++ **Hot Water Flow**
++ **Solar Illuminance**
++ **Outdoor Temperature**
++ **Building Electricity**
+
+## Example: Using Genome Data with Energon
+By writing EnergonQL, [**Energon**][energon] can assist to access the **Genome** data. For example:
+
+`SELECT Chilled_Water + Hot_Water + Solar`\
+`FROM Building A`\
+`WHERE A.id = 'Genome'`
+
+This query extracts the following list of features in **Genome**
+
 
 By using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
 
