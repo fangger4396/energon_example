@@ -75,6 +75,8 @@ You can write **EnergonQL** queries to extrac the followling list of features of
 `FROM Building A`\
 `WHERE A.id = 'Genome'`
 
+The **Genome_query_2** in the **energon_example.py** helps you to execute the query.
+
 ### Step 3.  Train and evaluate the model
 After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
 You can run the **model_training.py** to reproduce it.
