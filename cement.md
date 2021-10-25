@@ -29,10 +29,10 @@ You may feel intractable at the first glance. Here, we provide a tool [**Energon
 Firstly, click [here][download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
 ```
 Energon
-│   README.md
-│   energon_example.py  
-│   model_training.py
-│   model_evaluation.py
+├───README.md
+├───energon_example.py  
+├───model_training.py
+├───model_evaluation.py
 │ 
 └───Genome
   └───Genomedatafiles
