@@ -106,4 +106,4 @@ By using these features as input of model 1, the accuracy of model 1 for **EMSD*
 [download]:https://github.com/fangger4396/energon_example/blob/main/cement.md
 [RF]:https://www.sciencedirect.com/science/article/pii/S0378778818311290
 [LSTM]:https://www.sciencedirect.com/science/article/pii/S0306261917302921
-[download2]:https://drive.google.com/file/d/1EwPoNCn1O0-ag71p_tIN1DbzSfLc1VFl/view?usp=sharing
+[download2]:https://drive.google.com/file/d/19sGWnrKLrjlgX7xwI-b-a2QgN8AuFI6J/view?usp=sharing
