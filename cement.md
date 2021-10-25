@@ -86,7 +86,7 @@ After extracting the required data, you can process it and use it to train model
 You can run the **model_training.py** to reproduce it.
 
 ### Step 4. Evaluate the model
-Again, you can evaluate it by running the **model_testing.py** file. By using these features as input of model 1, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
+Again, you can evaluate it by running the **model_testing.py** file. By using these features as input of model 2, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
 
 
 ## Example 3 (bonus): Using EMSD Data with Energon for Model 1
