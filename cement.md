@@ -85,12 +85,13 @@ Again, you can evaluate it by running the **model_evaluate.py** file. By using t
 
 ## Example 3:Using EMSD Data with Energon for Model 1
 
-`SELECT Chiller + Solar`
+Similarlly, for the EMSD data, you can use the following EnergonQL query to extract data for Model 1.
+
+`SELECT Chiller + Solar`\
 `FROM Building A`\
-`WHERE A.id = 'Genome'`
+`WHERE A.id = 'EMSD`
 
 By using these features as input of model 1, the accuracy of model 1 for **EMSD** is 71% with the **percentage error** as metric.
-
 
 
 [genome]:https://github.com/buds-lab/the-building-data-genome-project
