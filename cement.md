@@ -32,16 +32,16 @@ Firstly, click [here][download2] to download the Energon tool from google driver
 ```
 Energon
 ├───README.md
-├───energon_example.py 
+├───data_extraction.py 
 │
-└───Model
+├───Model
 │ ├───model_training.py
-│ └───model_evaluation.py
+│ └───model_testing.py
 │ 
 └───Genome
   └───Genomedatafiles
 ```
-The example codes are prepared in the **energon_example.py** file.
+The example codes are prepared in the **data_extraction.py** file.
 
 
 ### Step 2. Writing EnergonQL to extract the data required for LF
@@ -53,7 +53,7 @@ By writing EnergonQL, [**Energon**][energon] can assist to access the **Genome**
 
 This query extracts the above list of features in **Genome**
 
-As these codes prepared in the **energon_example.py** file like this:
+As these codes prepared in the **data_extraction.py** file like this:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot2.png)
 Run this file in your ternimal and you will get data as following screenshot shows:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot.png)
@@ -65,7 +65,7 @@ If successful, you can see the parameters of the model like this:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot3.png)
 
 ### Step 4. Evaluate the model
-As the model trained, you can evaluate it by running the **model_evaluate.py** file. You can see by using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
+As the model trained, you can evaluate it by running the **model_testing.py** file. You can see by using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
 
 ## Example 2: Using Genome Data with Energon for Model 2
 
@@ -79,19 +79,19 @@ You can write **EnergonQL** queries to extrac the followling list of features of
 `FROM Building A`\
 `WHERE A.id = 'Genome'`
 
-The **Genome_query_2** in the **energon_example.py** helps you to execute the query.
+The **Genome_query_2** in the **data_extraction.py** helps you to execute the query.
 
 ### Step 3.  Train and evaluate the model
 After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
 You can run the **model_training.py** to reproduce it.
 
 ### Step 4. Evaluate the model
-Again, you can evaluate it by running the **model_evaluate.py** file. By using these features as input of model 1, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
+Again, you can evaluate it by running the **model_testing.py** file. By using these features as input of model 1, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
 
 
-## Example 3: Using EMSD Data with Energon for Model 1
+## Example 3 (bonus): Using EMSD Data with Energon for Model 1
 
-Similarlly, for the EMSD data, you can use the following EnergonQL query to extract data for Model 1.
+We also provide partial data of EMSD for a slight attempt of data extraction. You can use the following EnergonQL query to extract data for Model 1.
 
 `SELECT Chiller + Solar`\
 `FROM Building A`\
