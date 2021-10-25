@@ -83,7 +83,7 @@ You can run the **model_training.py** to reproduce it.
 Again, you can evaluate it by running the **model_evaluate.py** file. By using these features as input of model 1, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
 
 
-## Example 3:Using EMSD Data with Energon for Model 1
+## Example 3: Using EMSD Data with Energon for Model 1
 
 Similarlly, for the EMSD data, you can use the following EnergonQL query to extract data for Model 1.
 
