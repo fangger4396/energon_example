@@ -1,8 +1,9 @@
-# Examples on Load Forecasting Model 
-!Building Applications are widely used in building energy tracing, fault detection and equipment control, which are always developed in data-driven manner today. Here, we firstly introduce the application named **Load Forecasting (LF)**, and then show how two different building datasets can be used for this application.
-## Load Forecasting
-The Load Forecasting can be used to predict the next timestamp load of a group of building systems by training a ML model with histrical electricity data of the related systems. As there are limited datasets are public for Cooling Load Forecasting, and both of these two task are predicting load for demandside equipments. Thus we use the Load Forecasting for showing cases here,
-In general, a ML model construction process can be followed to get this model, which consists of data access, data processing, model training, model evaluation orderly.
+# Examples on Load Forecasting Model Development
+We provide a few examples on the general pipeline to develop an AI model for a load forecasting problem. To avoid directly working on the problem of the AI Challenge, we choose the Genome data set and we choose to solve an electricity load forecasting problem. The general pipeline is the same and contains three steps:  
++ (1)   Extract a subset of useful data for model training
++ (2)   Apply an algorithm for model training
++ (3)   Testing the model accuracy
++ 
 ## Public Building Datasets
 Besides the EMSD data, we also provide an open-source dataset from project [**Genome**][genome].
 ## Model Introduction
