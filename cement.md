@@ -78,7 +78,9 @@ You can write **EnergonQL** queries to extrac the followling list of features of
 ### Step 3.  Train and evaluate the model
 After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
 You can run the **model_training.py** to reproduce it.
-By using these features as input of model 1, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
+
+### Step 4. Evaluate the model
+Again, you can evaluate it by running the **model_evaluate.py** file. By using these features as input of model 1, the accuracy of model 1 for **Genome** is 85% with the **percentage error** as metric.
 
 
 ## Example 3:Using EMSD Data with Energon for Model 1
