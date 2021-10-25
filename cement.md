@@ -8,7 +8,7 @@ Besides the EMSD data, we also provide an open-source dataset from project [**Ge
 ## Model Introduction
 
 ### Model 1
-Model 2 is a [LSTM][LSTM] model which using the time-series data from both electrical and non-electrical systems and the weather data to train a neural network. This model require  data and the following data can serve it:
+Model 1 is a [LSTM][LSTM] model which using the time-series data from both electrical and non-electrical systems and the weather data to train a neural network. This model require  data and the following data can serve it:
 
 + **Chilled Water Flow**
 + **Hot Water Flow**
@@ -46,7 +46,7 @@ The example codes are prepared in the **energon_example.py** file.
 ### Step 2. Writing EnergonQL to extract the data required for LF
 By writing EnergonQL, [**Energon**][energon] can assist to access the **Genome** data. For example:
 
-`SELECT Chilled_Water + Hot_Water + Solar`\
+`SELECT Chilled_Water + Hot_Water + Solar + Electricity + Weather`\
 `FROM Building A`\
 `WHERE A.id = 'Genome'`
 
@@ -74,7 +74,7 @@ As you have downloaded the Energon tools, you can start from step 2 here.
 ### Step 2. Writing EnergonQL to extract the data required for LF
 You can write **EnergonQL** queries to extrac the followling list of features of **Genome** data for Model 2.
 
-`SELECT Chilled_Water + Hot_Water + Solar + Electricity + Weather`\
+`SELECT Chilled_Water + Hot_Water + Solar`\
 `FROM Building A`\
 `WHERE A.id = 'Genome'`
 
