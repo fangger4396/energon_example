@@ -61,11 +61,12 @@ Run this file in your ternimal and you will get data as following screenshot sho
 ### Step 3. Train the model
 After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
 You can run the **model_training.py** to reproduce it.
-By using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
+
 If successful, you can see the parameters of the model like this:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot3.png)
 ## Example 2: Using Genome Data with Energon for Model 2
-
+### Step 4. Evaluate the model
+As the model trained, you can evaluate it by running the **model_evaluate.py** file. You can see by using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
 ### Step 1. Install the Energon tool and datasets
 As you have downloaded the Energon tools, you can start from step 2 here.
 
