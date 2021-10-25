@@ -5,7 +5,7 @@ We provide a few examples on the general pipeline to develop an AI model for a l
 3.   Testing the model accuracy
  
 ## Public Building Datasets
-Besides the EMSD data, we also provide an open-source dataset from project [**Genome**][genome].
+The open-source dataset from project **Genome** are publicated and described [here][genome].
 ## Model Introduction
 
 ### Model 1
@@ -18,7 +18,7 @@ Model 1 is a [LSTM][LSTM] model which using the time-series data from both elect
 + **Building Electricity**
 
 ### Model 2
-Model 1 is a [Random Forest][RF] model which using the historical data from various systems of the building (e.g., chilled water system and hot water system) and solar illuminance data to train an ML model. Specifically, for the **Genome** datasets, the following sensing data are required:
+Model 2 is a [Random Forest][RF] model which using the historical data from various systems of the building (e.g., chilled water system and hot water system) and solar illuminance data to train an ML model. Specifically, for the **Genome** datasets, the following sensing data are required:
 
 + **Chilled Water Flow**
 + **Hot Water Flow**
@@ -93,7 +93,7 @@ Again, you can evaluate it by running the **model_testing.py** file. By using th
 
 We also provide partial data of EMSD for a slight attempt of data extraction. You can use the following EnergonQL query to extract data for Model 1.
 
-`SELECT Chiller + Solar`\
+`SELECT Chiller + Solar + Power`\
 `FROM Building A`\
 `WHERE A.id = 'EMSD`
 
