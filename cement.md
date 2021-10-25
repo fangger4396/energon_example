@@ -26,6 +26,24 @@ By using these features as input of model 1, the accuracy of model 1 for **Genom
 
 
 You can find the implement codes [**here**][download2] and try it by yourself.
+```
+project
+│   README.md
+│   file001.txt    
+│
+└───folder1
+│   │   file011.txt
+│   │   file012.txt
+│   │
+│   └───subfolder1
+│       │   file111.txt
+│       │   file112.txt
+│       │   ...
+│   
+└───folder2
+    │   file021.txt
+    │   file022.txt
+```
 ## Cogitation 1
 How can we write **EnergonQL** queries to extract the followling list of features of **Genome** data for Model 2?
 
