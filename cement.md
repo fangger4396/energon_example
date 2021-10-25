@@ -1,8 +1,8 @@
 # Building Application Introduction
 Building Applications are widely used in building energy tracing, fault detection and equipment control, which are always developed in data-driven manner today. Here, we firstly introduce the application named **Energy Consumption Predition (ECP)**, and then show how two different building datasets can be used for this application.
 ## Electricity Load Forecasting
-The Electricity Load Forecasting can be used to predict the next timestamp electricity load of a group of building systems by training a ML model with histrical electricity data of the related systems. As there are limited datasets are public for Cooling Load forecasting, and both of these two task are predicting load for demandside equipments. Thus we use the Electricity Load Forecasting here for case study here,
-Here, a general ML model construction process can be followed to get this model, which consists of data access, data processing, model training, model evaluation orderly.
+The Electricity Load Forecasting can be used to predict the next timestamp electricity load of a group of building systems by training a ML model with histrical electricity data of the related systems. As there are limited datasets are public for Cooling Load Forecasting, and both of these two task are predicting load for demandside equipments. Thus we use the Electricity Load Forecasting here for case study here,
+In general, a ML model construction process can be followed to get this model, which consists of data access, data processing, model training, model evaluation orderly.
 ## Public Building Datasets
 Besides the EMSD data, we also provide an open-source dataset from project [**Genome**][genome]. Both of them can be used for training ELF models and downloaded [**here**][download].
 ## Model Introduction
