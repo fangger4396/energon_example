@@ -34,13 +34,8 @@ Energon
 │   model_training.py
 │   model_evaluation.py
 │ 
-└───energon
-│ 
 └───Genome
-│ 
-└───Brick
-│ 
-└───ontology
+  └───Genomedatafiles
 ```
 The example codes are prepared in the **energon_example.py** file.
 
