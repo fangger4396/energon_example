@@ -1,9 +1,9 @@
 # Examples on Load Forecasting Model Development
 We provide a few examples on the general pipeline to develop an AI model for a load forecasting problem. To avoid directly working on the problem of the AI Challenge, we choose the Genome data set and we choose to solve an electricity load forecasting problem. The general pipeline is the same and contains three steps:  
-+ (1)   Extract a subset of useful data for model training
-+ (2)   Apply an algorithm for model training
-+ (3)   Testing the model accuracy
-+ 
+1.   Extract a subset of useful data for model training
+2.   Apply an algorithm for model training
+3.   Testing the model accuracy
+ 
 ## Public Building Datasets
 Besides the EMSD data, we also provide an open-source dataset from project [**Genome**][genome].
 ## Model Introduction
