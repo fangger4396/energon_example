@@ -43,7 +43,7 @@ The example codes are prepared in the **data_extraction.py** file.
 ### step 2. Writing EnergonQL to extract the data required
 By writing EnergonQL, [**Energon**][energon] can assist to access the **EMSD** data. For example:
 
-`SELECT Chiller(A) * FLOW_RATE(A)`\
+`SELECT Chiller(A) * (FLOW_RATE(A) + Temperature(A) + Power(A)) + Weather(A)`\
 `FROM Building A`\
 `WHERE A.id = 'EMSD'`
 
