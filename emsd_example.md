@@ -23,7 +23,43 @@ Finally, we merge the data we need by some scripts to generate a new .csv file. 
 
 Note that only **flowrate** data were found so far. The same process should go for other features.
 ### Using Energon
+You may feel intractable at the first glance. Here, we provide a tool [**Energon**][energon] may assist you. The following steps can guide you to go through the entire process.
 
-### Model training
+### Step 1. Install the Energon tool and datasets
+Firstly, click [here][download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
+```
+Energon
+├───README.md
+├───data_extraction.py 
+│
+├───Model
+│ ├───model_training.py
+│ └───model_testing.py
+│ 
+└───EMSD
+  └───EMSDdatafiles
+```
+The example codes are prepared in the **data_extraction.py** file.
+### step 2. Writing EnergonQL to extract the data required
+By writing EnergonQL, [**Energon**][energon] can assist to access the **EMSD** data. For example:
 
-### Model testing
+`SELECT Chiller(A) * FLOW_RATE(A)
+`FROM Building A`\
+`WHERE A.id = 'EMSD'`
+
+This query extracts the above flowrate features of chillers in **EMSD**
+
+As these codes prepared in the **data_extraction.py** file like this:
+![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot2.png)
+Run this file in your ternimal and you will get data as following screenshot shows:
+![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot4.png)
+### Step 3. Train the model
+After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
+You can run the **model_training.py** to reproduce it.
+
+If successful, you can see the parameters of the model like this:
+![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot3.png)
+
+### Step 4. Evaluate the model
+As the model trained, you can evaluate it by running the **model_testing.py** file. You can see by using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
+
