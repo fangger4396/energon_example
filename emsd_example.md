@@ -52,13 +52,15 @@ As these codes prepared in the **data_extraction.py** file like this:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot2.png)
 Run this file in your ternimal and you will get data as following screenshot shows:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot4.png)
-### Step 3. Train the model
+
+## The following AI learning process
+### Train the model
 After extracting the required data, you can process it and use it to train model just like any stardard ML model training process.
 You can run the **model_training.py** to reproduce it.
 
 If successful, you can see the parameters of the model like this:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot3.png)
 
-### Step 4. Evaluate the model
+### Evaluate the model
 As the model trained, you can evaluate it by running the **model_testing.py** file. You can see by using these features as input of model 1, the accuracy of model 1 for **Genome** is 58% with the **percentage error** as metric.
 
