@@ -46,12 +46,11 @@ By writing EnergonQL, [**Energon**][energon] can assist to access the **EMSD** d
 `FROM Building A`\
 `WHERE A.id = 'EMSD'`
 
-This query extracts the above flowrate features of chillers in **EMSD**
+This query extracts the above flowrate features of chillers in **EMSD** as follows:
 
-As these codes prepared in the **data_extraction.py** file like this:
-![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot2.png)
+![image](https://github.com/fangger4396/energon_example/blob/main/img/shot4.png)
 Run this file in your ternimal and you will get data as following screenshot shows:
-![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot4.png)
+![image](https://github.com/fangger4396/energon_example/blob/main/img/shot5.png)
 
 ## The following AI learning process
 ### Train the model
@@ -62,5 +61,5 @@ If successful, you can see the parameters of the model like this:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/screenshot3.png)
 
 ### Evaluate the model
-  As the model trained, you can evaluate it by running the **model_testing.py** file. You can see by using these features as input of model 1, the accuracy of model 1 for **EMSD** is 58% with the **percentage error** as metric.
+  As the model trained, you can evaluate it by running the **model_testing.py** file. You can see by using these features as input of the model, the accuracy of the model for **EMSD** is 58% with the **percentage error** as metric.
 
