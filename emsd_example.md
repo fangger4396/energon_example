@@ -13,13 +13,13 @@ Model we used here is a [LSTM][LSTM] model which using the time-series data from
 + **Outdoor Temperature**
 
 ### Manual Way
-Without loss of generality, we show how to extract the **flowrate** data of **chiller plant** here.
+Without loss of generality, we show how to extract the **flowrate** data of **chiller plant** manually here.
 
 We firstly observe the EMSD data. Since each .csv file of EMSD data is the collection of data from a single sensor, we trace the flowrate data by listing all the files whose name contains *CP* and *FLOWRATE*.
 
 Then we entry files we found and locate the data we need.
  
-Finally, we merge the data we need by some scripts to generate a new .csv file.
+Finally, we merge the data we need by some scripts to generate a new .csv file. This another .csv file can be seen as the input of the above model training algorithm.
 
 ### Using Energon
 
