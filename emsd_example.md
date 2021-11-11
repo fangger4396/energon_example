@@ -22,7 +22,7 @@ Finally, we merge the data we need by some scripts to generate a new .csv file. 
 
 Note that only **flowrate** data were found so far. The same process should go for other features.
 ### Using Energon
-You may feel intractable at the first glance. Here, we provide a tool [**Energon**][energon] may assist you. The following steps can guide you to go through the entire process.
+If you feel the above method intractable at the first glance. Here, we provide a tool [**Energon**][energon] may assist you. The following steps can guide you to go through the entire process.
 
 ### Step 1. Install the Energon tool and datasets
 Firstly, click [here][download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
