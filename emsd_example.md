@@ -10,7 +10,6 @@ Model we used here is a [LSTM][LSTM] model which using the time-series data from
 + **Flowrate of chiller plant**
 + **Temperature of chiller plant**
 + **Electricity power of chiller plant**
-+ **Outdoor Temperature**
 
 ### Manual Way
 Without loss of generality, we show how to extract the **flowrate** data of **chiller plant** manually here.
@@ -43,7 +42,7 @@ The example codes are prepared in the **data_extraction.py** file.
 ### step 2. Writing EnergonQL to extract the data required
 By writing EnergonQL, [**Energon**][energon] can assist to access the **EMSD** data. For example:
 
-`SELECT Chiller(A) * (FLOW_RATE(A) + Temperature(A) + Power(A)) + Weather(A)`\
+`SELECT Chiller(A) * (FLOW_RATE(A) + Temperature(A) + Power(A))`\
 `FROM Building A`\
 `WHERE A.id = 'EMSD'`
 
