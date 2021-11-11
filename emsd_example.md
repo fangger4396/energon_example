@@ -21,6 +21,7 @@ Then we entry files we found and locate the data we need.
  
 Finally, we merge the data we need by some scripts to generate a new .csv file. This another .csv file can be seen as the input of the above model training algorithm.
 
+Note that only **flowrate** data were found so far. The same process should go for other features.
 ### Using Energon
 
 ### Model training
