@@ -63,3 +63,10 @@ If successful, you can see the parameters of the model like this:
 ### Evaluate the model
   As the model trained, you can evaluate it by running the **model_testing.py** file. You can see by using these features as input of the model, the accuracy of the model for **EMSD** is 58% with the **percentage error** as metric.
 
+[genome]:https://github.com/buds-lab/the-building-data-genome-project
+[brick]:https://brickschema.org/ontology/
+[energon]:https://github.com/fangger4396/energon_example/blob/main/Energon.md
+[download]:https://github.com/fangger4396/energon_example/blob/main/cement.md
+[RF]:https://www.sciencedirect.com/science/article/pii/S0378778818311290
+[LSTM]:https://www.sciencedirect.com/science/article/pii/S0306261917302921
+[download2]:https://drive.google.com/file/d/19sGWnrKLrjlgX7xwI-b-a2QgN8AuFI6J/view?usp=sharing
