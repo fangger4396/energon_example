@@ -9,7 +9,7 @@ Model we used here is a [LSTM][LSTM] model which using the time-series data from
 
 + **Flowrate of chiller plant**
 + **Temperature of chiller plant**
-+ **electricity power of chiller plant**
++ **Electricity power of chiller plant**
 + **Outdoor Temperature**
 
 ### Manual Way
