@@ -1,5 +1,5 @@
 ## Example of extracting data from raw EMSD data
-Here, we provide an example to show how to extract the data you can use to train the cooling load prediction model in the competition from the **raw EMSD data**. 
+Here, we provide an example to show how to extract the data you can use to train the cooling load prediction model in the competition from the **raw EMSD data**. As we have stored the raw EMSD data in Energon, you should firtly download the Energon and install it for further use.
 ## The raw EMSD data
 The raw EMSD data is different from what you recived from the organizers of the competition which can directly used for model training. The raw EMSD data is much more complex and coarse. Thus, we firstly give a full view of the raw EMSD data.
 
