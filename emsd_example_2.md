@@ -2,7 +2,7 @@
 Here, we provide an example to show how to extract the data you can use to train the cooling load prediction model in the competition from the **raw EMSD data**. As we have stored the raw EMSD data in Energon, you should firtly download the Energon and install it for further use.
 
 ## Installation of Energon
-You can download the Energon here[download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
+You can download the Energon [here][download2] to download the Energon tool from google driver to local. Decompress the zip file and you find the dir structure looks like this:
 ```
 Energon
 ├───README.md
