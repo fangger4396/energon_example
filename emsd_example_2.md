@@ -40,6 +40,10 @@ By writing EnergonQL, [**Energon**][energon] can assist to access the **EMSD** d
 
 This query extracts the above flowrate features of chillers in **EMSD** as follows:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/emsd2.png)
+
+For further introduction of Energon, you can refer to [here][energon].
+
+
 [genome]:https://github.com/buds-lab/the-building-data-genome-project
 [brick]:https://brickschema.org/ontology/
 [energon]:https://github.com/fangger4396/energon_example/blob/main/Energon.md
