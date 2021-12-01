@@ -34,7 +34,7 @@ Here, we simply give an example of writing query with Energon to query data from
 
 By writing EnergonQL, [**Energon**][energon] can assist to access the **EMSD** data. For example:
 
-`SELECT Chiller(A) * (FLOW_RATE(A) + Temperature(A) + Power(A))`\
+`SELECT Chiller(A) * (FLOW_RATE(A) + Temperature(A))`\
 `FROM Building A`\
 `WHERE A.id = 'EMSD'`
 
