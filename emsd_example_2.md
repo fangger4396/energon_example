@@ -15,6 +15,21 @@ The dependency of the Energon project is in the requirements.txt.
 
 All the raw EMSD data are stored in the directory **EMSD**. Each csv file stores the data collected by a single sensor. Note that we only place a piece of data for these sensors (the data of 1st Jan. 2021) for this tutorial.
 
+## Query data from raw EMSD data by Energon
+Here, we simply give an example of writing query with Energon to query data from the raw EMSD data. You can easily recur it by running the **data_extraction** script.
+
+By writing EnergonQL, [**Energon**][energon] can assist to access the **EMSD** data. For example:
+
+`SELECT Chiller(A) * (FLOW_RATE(A) + Temperature(A))`\
+`FROM Building A`\
+`WHERE A.id = 'EMSD'`
+
+This query extracts the above flowrate and temperature features of chillers in **EMSD** as follows:
+![image](https://github.com/fangger4396/energon_example/blob/main/img/emsd2.png)
+
+For further introduction of Energon, you can refer to [here][energon].
+
+
 ## The raw EMSD data
 The raw EMSD data is different from what you recived from the organizers of the competition which can directly used for model training. The raw EMSD data is much more complex and coarse. Thus, we firstly try to give a summarize of the raw EMSD data.
 
@@ -29,19 +44,6 @@ Finally, we merge the data we need by some scripts to generate a new .csv file. 
 
 Note that only **temperature** data were found so far. The same process should go for other features.
 
-## Query data from raw EMSD data by Energon
-Here, we simply give an example of writing query with Energon to query data from the raw EMSD data. You can easily recur it by running the **data_extraction** script.
-
-By writing EnergonQL, [**Energon**][energon] can assist to access the **EMSD** data. For example:
-
-`SELECT Chiller(A) * (FLOW_RATE(A) + Temperature(A))`\
-`FROM Building A`\
-`WHERE A.id = 'EMSD'`
-
-This query extracts the above flowrate and temperature features of chillers in **EMSD** as follows:
-![image](https://github.com/fangger4396/energon_example/blob/main/img/emsd2.png)
-
-For further introduction of Energon, you can refer to [here][energon].
 
 
 [genome]:https://github.com/buds-lab/the-building-data-genome-project
