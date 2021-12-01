@@ -20,7 +20,7 @@ The raw EMSD data is different from what you recived from the organizers of the 
 
 The raw EMSD data are collected by multiple sensors which distribute in different systems (e.g., chillers, AHUs, boilers, etc.) in the EMSD building and are varying in types (e.g., temperature, humidity, flow rate, etc.). The EMSD building located in 1 Hoi Ting Road, Yau Ma Tei, Kowloon, Hong Kong. It consists of two office towers and has a total area of 98,000 m^2.
 
-Without loss of generality, we show how to extract the **temperature** data of **chiller plant** **without** a tool here.
+Without loss of generality, we show how to extract the **temperature** data of chiller plant **without** a data acquisition tool here.
 
 We firstly observe the EMSD data. Since each .csv file of EMSD data is the collection of data from a single sensor, we trace the flowrate data by listing all the files whose name contains *CP*(denotes Chiller Plant) and *TEMP* (denotes temperature) (highlight in yellow).
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/emsd.png)
