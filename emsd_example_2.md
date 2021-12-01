@@ -6,14 +6,10 @@ You can download the Energon [here][download2] to download the Energon tool from
 ```
 Energon
 ├───README.md
+├───requirements.txt
 ├───data_extraction.py 
-│
-├───Model
-│ ├───model_training.py
-│ └───model_testing.py
-│ 
 └───EMSD
-  └───EMSDdatafiles
+  └───EMSD_data_files
 ```
 
 All the raw EMSD data are stored in the directory **EMSD**. Each csv file stores the data collected by a single sensor. Note that we only place a piece of data for these sensors (the data of 1st Jan. 2021) to limit the impact of the raw data on the competition.
