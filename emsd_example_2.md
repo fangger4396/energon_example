@@ -11,13 +11,14 @@ Energon
 └───EMSD
   └───EMSD_data_files
 ```
+The dependency of the Energon project is in the requirements.txt.
 
-All the raw EMSD data are stored in the directory **EMSD**. Each csv file stores the data collected by a single sensor. Note that we only place a piece of data for these sensors (the data of 1st Jan. 2021) to limit the impact of the raw data on the competition.
+All the raw EMSD data are stored in the directory **EMSD**. Each csv file stores the data collected by a single sensor. Note that we only place a piece of data for these sensors (the data of 1st Jan. 2021) for this tutorial.
 
 ## The raw EMSD data
-The raw EMSD data is different from what you recived from the organizers of the competition which can directly used for model training. The raw EMSD data is much more complex and coarse. Thus, we firstly give a full view of the raw EMSD data.
+The raw EMSD data is different from what you recived from the organizers of the competition which can directly used for model training. The raw EMSD data is much more complex and coarse. Thus, we firstly try to give a summarize of the raw EMSD data.
 
-The raw EMSD data are collected by multiple sensors which distribute in different systems (e.g., Chillers, AHUs, Boilers, etc.) in the EMSD building and are varying in types (e.g., temperature, humidity, flow rate, etc.).
+The raw EMSD data are collected by multiple sensors which distribute in different systems (e.g., Chillers, AHUs, Boilers, etc.) in the EMSD building and are varying in types (e.g., temperature, humidity, flow rate, etc.). The EMSD building located in 1 Hoi Ting Road, Yau Ma Tei, Kowloon, Hong Kong. It consists of two office towers and has a total area of 98,000 m^2.
 
 Without loss of generality, we show how to extract the **flowrate** data of **chiller plant** manually here.
 
