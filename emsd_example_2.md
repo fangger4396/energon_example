@@ -38,7 +38,7 @@ By writing EnergonQL, [**Energon**][energon] can assist to access the **EMSD** d
 `FROM Building A`\
 `WHERE A.id = 'EMSD'`
 
-This query extracts the above flowrate features of chillers in **EMSD** as follows:
+This query extracts the above flowrate and temperature features of chillers in **EMSD** as follows:
 ![image](https://github.com/fangger4396/energon_example/blob/main/img/emsd2.png)
 
 For further introduction of Energon, you can refer to [here][energon].
